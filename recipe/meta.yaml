@@ -1,4 +1,4 @@
-{% set version = '0.1.10' %}
+{% set version = "0.1.11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dunlin_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dunlin/dunlin_{{ version }}.tar.gz
-  sha256: d32c83fc3350aceaabaa5337e5a671e0125d1633fa30f26d534b4b655998ed08
+  sha256: ff49a97b37e47662d821218e276767bda4d851054aabb1e951f83a63adbc38f0
 
 build:
   number: 0
@@ -57,8 +57,7 @@ test:
 about:
   home: https://insightsengineering.github.io/dunlin/, https://github.com/insightsengineering/dunlin/
   license: Apache-2.0
-  summary: A collection of functions to preprocess data and organize them in a format amenable
-    to use by chevron.
+  summary: A collection of functions to preprocess data and organize them in a format amenable to use by chevron.
   license_family: APACHE
   license_file:
     - LICENSE-2.0.txt
